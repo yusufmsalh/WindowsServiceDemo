@@ -17,7 +17,7 @@ namespace WindowsServiceDemo
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new UdemyWS()
             };
             ServiceBase.Run(ServicesToRun);
         }

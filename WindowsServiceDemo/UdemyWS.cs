@@ -10,19 +10,22 @@ using System.Threading.Tasks;
 
 namespace WindowsServiceDemo
 {
-    public partial class Service1 : ServiceBase
+    public partial class UdemyWS : ServiceBase
     {
-        public Service1()
+        public UdemyWS()
         {
             InitializeComponent();
         }
 
         protected override void OnStart(string[] args)
         {
+            EventLog.WriteEntry("Hello World,udemy Windows Service Started",EventLogEntryType.Information);
         }
 
         protected override void OnStop()
         {
+            EventLog.WriteEntry("Hello World,udemy Windows Service  Stopped", EventLogEntryType.Information);
+
         }
     }
 }
